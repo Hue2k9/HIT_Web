@@ -1,0 +1,126 @@
+html{
+    font-family: Arial, Helvetica, sans-serif;
+   background-image: url('https://phongvu.vn/cong-nghe/wp-content/uploads/2018/07/tong-hop-anh-nen-laptop-toi-uu-cho-cong-viec-va-bao-ve-mat-3.jpg');
+    background-size: 100%;
+}
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+a{
+    text-decoration: none;
+}
+#container{
+    width: 350px;
+    margin: 0px auto;
+    margin-top: 35px;
+    background-color:white;
+    border-radius: 10px;
+    box-shadow: 2px 2px 2px #333;
+}
+#container>.form>.title{
+    display: flex;
+    justify-content: space-between;
+    padding-top: 20px;
+}
+#container>.form>.title i{
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    align-items: center;
+    text-align: center;
+    font-size: 20px;
+    margin-top: -10px;
+    box-shadow: 1px 1px 1px #333;
+    cursor: pointer;
+}
+#container>.form>.title h3{
+    font-size: 20px;
+}
+.form{
+    width: 90%;
+    margin: 0 auto;
+}
+.form .log-in-with{
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+.form .log-in-with a{
+    display: flex;
+    padding-top:7px;
+    padding-bottom: 7px;
+    border: 1px solid rgb(131, 129, 129);
+    border-radius: 5px;
+}
+.form .log-in-with a i{
+    padding-left: 70px;
+    color:black;
+
+}
+.form .log-in-with a p{
+    padding-left:5px ;
+    color:black;
+    font-weight: bold;
+}
+hr{
+    margin-top: 20px;
+    margin-bottom: 20px;
+    color:rgb(131, 129, 129);
+}
+form .btn-form p{
+    font-weight: bold;
+    padding-top: 10px;
+    padding-bottom: 5px;
+}
+form .btn-form input{
+    width: 100%;
+    height: 35px;
+    border-radius: 5px;
+    border: 1px solid #333;
+}
+form .btn-form input::placeholder{
+    padding-left: 5px;
+    color:rgb(131, 129, 129);
+}
+form .check{
+    margin: 15px 0px;
+    display: flex;
+    align-items: center;
+}
+form .check input{
+    width: 16px;
+    height: 16px;
+}
+form .check p{
+    padding-left: 5px;
+    color:rgb(46, 44, 44);
+}
+form .enter button{
+    width: 100%;
+    height: 30px;
+    color: white;
+    background-color: blue;
+    cursor: pointer;
+    border-radius: 5px;
+    font-weight: bold;
+}
+form .different{
+    margin-top: 20px;
+    text-align: center;
+}
+form .different a{
+   
+    font-weight: bold;
+    color: #1E90FF;
+}
+.register{
+    padding-bottom: 20px;
+    text-align: center;
+}
+.register a{
+    font-weight: bold;
+   
+    color: #1E90FF;
+    padding-top: 10px;
+}
