@@ -1,0 +1,109 @@
+html{
+   font-family: Arial, Helvetica, sans-serif;
+   background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS5RhCY1fYFRZSyBGLmdNE7eAICnoohqL8VpA&usqp=CAU');
+   background-repeat: no-repeat;
+   background-size: 100%;
+}
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+ul{
+    list-style-type: none;
+}
+body{
+   
+}
+#container{
+    width: 25%;
+    min-height:450px;
+    margin: 0 auto;
+    margin-top: 50px;
+    border-radius: 10px;
+    background-color: aliceblue;
+    box-shadow: 3px 3px 3px rgb(165, 164, 164);
+}
+#content img{
+    width: 100%;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    height: 165px;
+}
+#content .title h3{
+    padding-top:15px;
+    padding-bottom: 15px;
+    text-align: center;
+    
+}
+#content .title p{
+    padding-bottom: 15px;
+    text-align: center;
+    margin-left: 20px;
+    margin-right: 20px;
+    color:rgb(92, 90, 90);
+}
+#content .content-nav ul{
+    display: flex;
+    margin-left: 20px;
+    margin-right: 20px;
+    justify-content: space-between;
+    background-color: rgb(203, 227, 241);
+    padding: 10px 20px;
+    border-radius: 10px;
+}
+#content .content-nav ul li{
+    display: flex;
+    align-items: center;
+}
+#content .content-nav ul li i{
+    background-color: rgb(125, 180, 211);
+    padding: 10px 10px;
+    border-radius: 50%;
+}
+#content .content-nav ul li a{
+    font-weight: bold;
+    text-decoration: underline;
+}
+#content .content-nav ul li div{
+    margin-left: 20px;
+}
+a{
+    text-decoration: none;
+}
+
+#content .content_subnav ul li.top{
+    background-color: blue;
+    margin: 15px 20px;
+    border-radius: 10px;
+}
+#content .content_subnav ul li.top a{
+    color:white;
+    font-weight: bold;
+    
+}
+#content .content_subnav ul li{
+    padding-top: 10px;
+    padding-bottom: 10px;
+    text-align: center;
+}
+#content .content_subnav ul li a{
+    padding-top: 10px;
+    padding-bottom: 10px;
+    text-align: center;
+}
+#content .content_subnav ul li.bottom a{
+    font-weight: bold;
+    color:rgb(92, 90, 90);
+}
+#content .content_subnav ul {
+    padding-bottom: 30px;
+}
+
+@media only screen and (max-width: 800px) {
+    #container{
+        width: 80%;
+    }
+}
+
+
