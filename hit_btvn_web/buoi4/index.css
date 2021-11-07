@@ -1,0 +1,116 @@
+html {
+  background-color: #333;
+  color: white;
+}
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+.container {
+  margin-left: 40px;
+}
+.content {
+  display: flex;
+}
+ul {
+  list-style-type: none;
+}
+h1 {
+  text-transform: uppercase;
+  color: white;
+  margin-top: 30px;
+}
+h3 {
+  color: red;
+  margin-top: 30px;
+  margin-bottom: 20px;
+}
+.info {
+  padding-left: 15px;
+  padding-right: 15px;
+}
+.one,
+.two,
+.three {
+  border-right: 1px solid white;
+}
+.one,
+.three {
+  width: 22%;
+}
+.two,
+.four {
+  width: 30%;
+}
+.one {
+  padding-left: 0px;
+}
+.info p {
+  padding-top: 20px;
+  padding-bottom: 40px;
+}
+.info hr {
+  margin-bottom: 10px;
+}
+img {
+  margin-top: -25px;
+}
+@media only screen and (max-width: 767px) {
+  .container {
+    margin-left: 20px;
+  }
+  .content {
+    flex-direction: column;
+  }
+  .content .info {
+    width: 100%;
+  }
+  .two,
+  .three,
+  .four {
+    padding-left: 0px;
+  }
+  .one,
+  .two,
+  .three {
+    margin-right: -20px;
+  }
+  .one p.last,
+  .two p.last,
+  .three p.last {
+    border-bottom: 1px solid white;
+    margin-bottom: 10px;
+  }
+
+  .info .first {
+    margin-top: 50px;
+  }
+}
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+  .content {
+    flex-wrap: wrap;
+  }
+  .content .info {
+  }
+  .content .one,
+  .content .three {
+    width: 35%;
+  }
+  .content .two,
+  .content .four {
+    width: 55%;
+  }
+  .three {
+    padding-left: 0px;
+  }
+  .two {
+    border: none;
+  }
+  .one .last {
+    border-bottom: 1px solid white;
+  }
+  .one {
+    margin-bottom: 30px;
+  }
+}
