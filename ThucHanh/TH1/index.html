@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ha Noi University of Industry</title>
+    <link rel="stylesheet" href="https://code.jquery.com/jquery-3.6.0.min.js" />
+    <link rel="stylesheet" href="index.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css"
+    />
+  </head>
+  <body>
+    <div class="container">
+      <div class="khoi"></div>
+      <div class="nhang">
+        <img id="nhang" src="../image/nhang.png" alt="" />
+      </div>
+      <marquee direction="left" scrollDelay="1">
+        HA NOI UNIVERSITY OF INDUSTRY
+      </marquee>
+      <div class="received">
+        <img src="../image/tho.jpg" alt="" />
+      </div>
+      <hr />
+      <div class="btn-pray">
+        <div class="left">
+          <h6>Chọn môn học</h6>
+          <select name="subject" id="subject" onchange="Subjects()"></select>
+          <div id="english">
+            <i class="fas fa-book"></i>
+            <p>2.450.000 VNĐ</p>
+          </div>
+        </div>
+        <div class="pray">
+          <p id="display"></p>
+          <input
+            id="text"
+            type="text"
+            placeholder="Nhập mong muốn của bạn..."
+          />
+          <button onclick="pray()">THẮP HƯƠNG</button>
+        </div>
+      </div>
+    </div>
+    <script src="index.js"></script>
+  </body>
+</html>
