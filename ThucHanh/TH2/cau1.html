@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Đăng ký thành viên</title>
+    <link rel="stylesheet" href="cau1.css" />
+  </head>
+  <body>
+    <form class="container" id="myform">
+      <h1>Đăng ký thành viên</h1>
+      <div class="input name">
+        <div>
+          <p>Họ và tên</p>
+          <input type="text" id="name" required />
+        </div>
+        <p id="checkname"></p>
+      </div>
+
+      <div class="input password">
+        <div>
+          <p>Mật khẩu</p>
+          <input type="password" id="password" onblur="Check()" />
+        </div>
+        <p id="checkpassword"></p>
+      </div>
+
+      <div class="input password">
+        <div>
+          <p>Khẳng định mật khẩu</p>
+          <input id="passwordagain" type="password" onblur="Check()" />
+        </div>
+        <p id="checkpasswordagain"></p>
+      </div>
+
+      <div class="input day">
+        <div>
+          <p>Ngày tháng năm sinh</p>
+          <input type="date" id="date" />
+        </div>
+        <p id="checkday"></p>
+      </div>
+
+      <div class="input phonenumber">
+        <div>
+          <p>Số điện thoại</p>
+          <input id="phone" type="text" onblur="Check()" />
+        </div>
+        <p id="checkphone"></p>
+      </div>
+
+      <div class="input link">
+        <div>
+          <p>Đường dẫn ảnh</p>
+          <input type="file" id="file" />
+        </div>
+        <p id="checkfile" onblur="Check()"></p>
+      </div>
+
+      <div class="input active">
+        <button onclick="Check()" id="dk">Đăng ký</button>
+        <button id="delete" onlick="DeleteForm()">Hủy bỏ</button>
+        <p id="checkall"></p>
+      </div>
+    </form>
+
+    <script src="cau1.js"></script>
+  </body>
+</html>

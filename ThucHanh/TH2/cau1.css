@@ -1,0 +1,47 @@
+html {
+  background-image: url("https://img.thuthuatphanmem.vn/uploads/2018/10/08/anh-anime-phong-canh-dep_093817122.jpg");
+  background-repeat: no-repeat;
+}
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+.container {
+  width: 26%;
+  margin: 0px auto;
+  margin-top: 50px;
+  background-color: white;
+  padding: 10px 20px;
+  border: 1px solid #333;
+  border-radius: 10px;
+  box-shadow: 2px 3px 3px #333;
+}
+.container .input {
+  margin-bottom: 10px;
+}
+.container .input div {
+  width: 100%;
+
+  display: flex;
+  justify-content: space-between;
+}
+.container .input > p {
+  color: red;
+  text-align: center;
+}
+.active {
+  margin-left: 80px;
+}
+.active button {
+  width: 80px;
+  height: 30px;
+  line-height: 30px;
+  cursor: pointer;
+}
+h1 {
+  margin-bottom: 30px;
+  text-align: center;
+  color: rgb(19, 97, 97);
+  font-weight: bold;
+}
