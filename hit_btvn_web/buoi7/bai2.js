@@ -1,14 +1,22 @@
 let arr1=[1,2,3]
 let arr2=[0]
 let arr3=[9]
-arr1=arr1.map(plusOne);
-arr2=arr2.map(plusOne);
-arr3=arr3.map(plusOne);
-
-function plusOne(num){
-    return num+1;
+function Change(arr){
+    var k="";
+    var newArr=[];
+    arr.forEach(element => {
+        k+=element;
+    });
+    let num=Math.floor(k);
+    num+=1;
+    num=num.toString();
+    for(let i of num){
+        let x=Math.floor(i);
+        newArr.push(x);
+    }
+    console.log(lastArr);
 }
-console.log(arr1);
-console.log(arr2);
-console.log(arr3);
+Change(arr1);
+Change(arr2);
+Change(arr3);
 
