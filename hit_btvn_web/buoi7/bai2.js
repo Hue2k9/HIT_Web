@@ -1,7 +1,7 @@
 let arr1=[1,2,3]
 let arr2=[0]
 let arr3=[9]
-function Change(arr){
+function change(arr){
     var k="";
     var newArr=[];
     arr.forEach(element => {
@@ -16,7 +16,7 @@ function Change(arr){
     }
     console.log(lastArr);
 }
-Change(arr1);
-Change(arr2);
-Change(arr3);
+change(arr1);
+change(arr2);
+change(arr3);
 
