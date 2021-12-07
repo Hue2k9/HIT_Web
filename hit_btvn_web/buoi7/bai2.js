@@ -14,7 +14,7 @@ function change(arr){
         let x=Math.floor(i);
         newArr.push(x);
     }
-    console.log(lastArr);
+    console.log(newArr);
 }
 change(arr1);
 change(arr2);
