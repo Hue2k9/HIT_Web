@@ -876,7 +876,6 @@ form .send_feedback {
 }
 .content .reason img {
   z-index: -1;
-  height: 33px;
 }
 #header .navbar-links {
   background-color: rgba(9, 64, 95, 0.95);
