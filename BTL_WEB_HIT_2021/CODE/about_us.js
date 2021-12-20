@@ -54,7 +54,7 @@ function Count(){
     let i=0;
     let count1=setInterval(myCounting1,1);
     function myCounting1(){
-        if((document.body.scrollTop>780) || (document.documentElement.scrollTop>780)){
+        if((document.body.scrollTop>825) || (document.documentElement.scrollTop>825)){
             listCount[0].innerHTML=i+"M";
             i++;
         }
@@ -65,7 +65,7 @@ function Count(){
     let k=0;
     let count2=setInterval(myCounting2,25);
     function myCounting2(){ 
-        if((document.body.scrollTop>780) || (document.documentElement.scrollTop>780)){
+        if((document.body.scrollTop>825) || (document.documentElement.scrollTop>825)){
             listCount[1].innerHTML=k+"K";
             k++;
         }
@@ -75,7 +75,7 @@ function Count(){
     let j=0;
     let count3=setInterval(myCounting3,25);
     function myCounting3(){
-        if((document.body.scrollTop>780) || (document.documentElement.scrollTop>780)){
+        if((document.body.scrollTop>825) || (document.documentElement.scrollTop>825)){
             listCount[2].innerHTML=j;
             j++;
         }
@@ -85,7 +85,7 @@ function Count(){
     let m=0;
     let count4=setInterval(myCounting4,25);
     function myCounting4(){
-        if((document.body.scrollTop>780) || (document.documentElement.scrollTop>780)){
+        if((document.body.scrollTop>825) || (document.documentElement.scrollTop>825)){
             listCount[3].innerHTML=m;
             m++;
         }
