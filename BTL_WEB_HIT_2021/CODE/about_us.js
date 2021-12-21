@@ -23,7 +23,7 @@ clients[4].style.display="none";
 clients[5].style.display="none";
 function Client(){
     var time=0;
-    var animate=setInterval(display,2500);
+    var animate=setInterval(display,3500);
     function display(){
         time++;
         if (time==1){ 
