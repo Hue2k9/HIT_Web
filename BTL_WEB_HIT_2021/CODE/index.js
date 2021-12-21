@@ -45,7 +45,7 @@ function contentHeading(){
     var time=160;
     var animate=setInterval(display,10);
    function display(){
-    if (time===80){
+    if (time===50){
         clearInterval(animate);
     }
     else{
