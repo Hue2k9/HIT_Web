@@ -52,7 +52,7 @@ Client();
 let listCount=document.querySelectorAll("h1.count");
 function Count(){
     let i=0;
-    let count1=setInterval(myCounting1,1);
+    let count1=setInterval(myCounting1,8);
     function myCounting1(){
         if((document.body.scrollTop>825) || (document.documentElement.scrollTop>825)){
             listCount[0].innerHTML=i+"M";
@@ -111,19 +111,56 @@ changeImage1=function () {
       index=0;
 }
 setInterval(changeImage1,1300);
-/*
-let search=document.getElementById("search_menu");
-let menuSearch=document.querySelector('.nav-bar-search1');
-search.onclick=function(){
-    menuSearch.style.display="block";
+
+let char=document.querySelectorAll(".run_vote");
+console.log(char);
+let pt1=0;
+let pt2=0;
+let pt3=0;
+let pt4=0;
+let pt5=5;
+let charStar=()=>{
+    let increase1=setInterval(increaseStar1,20);
+    function increaseStar1(){
+        if((document.body.scrollTop>1600) || (document.documentElement.scrollTop>1600)){
+            char[0].style.width=pt1+"%";
+            pt1++;
+        }
+        if (pt1===95){
+            clearInterval(increase1);
+        }
+    }
+    let increase2=setInterval(increaseStar2,20);
+    function increaseStar2(){
+        if((document.body.scrollTop>1600) || (document.documentElement.scrollTop>1600)){
+            char[1].style.width=pt2+"%";
+            pt2++;
+        }
+        if (pt2===80){
+            clearInterval(increase2);
+        }
+    }
+    let increase3=setInterval(increaseStar3,20);
+    function increaseStar3(){
+        if((document.body.scrollTop>1600) || (document.documentElement.scrollTop>1600)){
+            char[2].style.width=pt3+"%";
+            pt3++;
+        }
+        if (pt3===25){
+            clearInterval(increase3);
+        }
+    }
+    let increase4=setInterval(increaseStar4,20);
+    function increaseStar4(){
+        if((document.body.scrollTop>1600) || (document.documentElement.scrollTop>1600)){
+            char[3].style.width=pt4+"%";
+            char[4].style.width=pt4+"%";
+            pt4++;
+        }
+        if (pt4===6){
+            clearInterval(increase4);
+        }
+    }
 }
-let exitSearch=document.getElementById("exit_search");
-exitSearch.onclick=function () {
-    menuSearch.style.display="none";
-}
-*/
 
-
-
-
-
+charStar();

@@ -506,23 +506,23 @@ footer {
   border-radius: 5px;
 }
 .star_rating1 .right li .star5 {
-  width: 95%;
+  width: 0%;
   background-color: rgb(4, 168, 53);
 }
 .star_rating1 .right li .star4 {
-  width: 80%;
+  width: 0%;
   background-color: rgb(4, 168, 53);
 }
 .star_rating1 .right li .star3 {
-  width: 15%;
+  width: 0%;
   background-color: rgb(4, 168, 53);
 }
 .star_rating1 .right li .star2 {
-  width: 5%;
+  width: 0%;
   background-color: rgb(4, 168, 53);
 }
 .star_rating1 .right li .star1 {
-  width: 5%;
+  width: 0%;
   background-color: rgb(4, 168, 53);
 }
 /* Base CSS */
