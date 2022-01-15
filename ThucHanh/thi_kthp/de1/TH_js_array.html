@@ -44,7 +44,7 @@
     </form>
     <script>
         let output = document.getElementById("output");
-        document.getElementById("submit").addEventListener("click", function (e) {
+        document.getElementById("submit").addEventListener("click", (e) => {
             let n = document.getElementById("input").value;
 
             let arr = [];
@@ -55,14 +55,14 @@
             }
 
             let max = Math.max(...newArr);
-            let filterResult = newArr.filter(function (element) {
+            let filterResult = newArr.filter((element) => {
                 return element !== max;
             });
             output.value = filterResult;
             e.preventDefault();
         });
 
-        document.getElementById("delete").addEventListener("click", function () {
+        document.getElementById("delete").addEventListener("click", () => {
             document.getElementById("form").reset();
         });
     </script>
