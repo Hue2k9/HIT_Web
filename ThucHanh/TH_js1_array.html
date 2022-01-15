@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .submit {
+            margin-top: 10px;
+        }
+
+        form {
+            margin-left: 100px;
+        }
+    </style>
+</head>
+
+<body>
+    <form action="" id="form">
+        <div class="form input">
+            <p>Nhap mang: </p>
+            <input type="text" id="input">
+        </div>
+        <div class="form output">
+            <p>Mang sau khi xoa</p>
+            <input type="text" id="output">
+        </div>
+        <div class="form submit">
+            <button id="delete">Huy bo</button>
+            <button id="submit">Xoa phan tu lon nhat</button>
+        </div>
+    </form>
+
+    <script>
+        let output = document.getElementById("output");
+        document.getElementById("submit").addEventListener("click", function (e) {
+            let n = document.getElementById("input").value;
+            let sum = 0;
+            let arr = [];
+            arr = n.split(",");
+            let newArr = [];
+            for (let i of arr) {
+                newArr.push(Math.floor(i));
+            }
+            let max = Math.max(...newArr);
+
+            let filterResult = newArr.filter(function (element) {
+                return element !== max;
+            });
+            output.value = filterResult;
+            e.preventDefault();
+        });
+
+        document.getElementById("delete").addEventListener("click", function () {
+            document.getElementById("form").reset();
+        });
+    </script>
+</body>
+
+</html>

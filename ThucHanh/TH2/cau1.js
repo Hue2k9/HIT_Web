@@ -79,17 +79,33 @@ function Check(){
         document.getElementById("checkphone").innerHTML="Hộp số điện thoại không được dùng ký tự và ký tự đặc biệt ngoại trừ dấu ( )-";
     }
     else
-    document.getElementById("checkphone").innerHTML="";
+       document.getElementById("checkphone").innerHTML="";
+
     var submit=document.getElementById("dk");  
     submit.addEventListener("click",(e) =>{
         e.preventDefault();
         if (CheckDate()==true && CheckImage()==true&& CheckName()==true && CheckPassWord()==true && CheckPassWordAgain()==true && CheckPhone()==true )
+          {
+            alert("Chuc mung ban da dk thanh cong");
+            return;
+          }
+          
+        else
+           {
+            alert("DK khong thanh cong. Vui long kiem tra lai");
+            return;
+           }
+        });  
+
+  /* 
+    submit.addEventListener("click", function(){
+        if (CheckDate()==true && CheckImage()==true && CheckName()==true && CheckPassWord()==true && CheckPassWordAgain()==true && CheckPhone()==true )
            alert("Chuc mung ban da dk thanh cong");
           
         else
            alert("DK khong thanh cong. Vui long kiem tra lai");
-        
-        });  
+    });
+       */ 
 }
 function DeleteForm(){
     document.getElementById("myform").reset();

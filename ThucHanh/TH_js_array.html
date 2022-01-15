@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        table {
+            background-color: rgb(67, 189, 226);
+            margin: 0px auto;
+            margin-top: 100px;
+            text-align: center;
+        }
+
+        #delete {
+            margin-left: 45px;
+        }
+    </style>
+</head>
+
+<body>
+    <form id="form">
+        <table border="1">
+            <tr>
+                <td colspan="2" text-align="center">Xóa phần tử lớn nhất trong mảng</td>
+            </tr>
+            <tr>
+                <td>Nhập mảng</td>
+                <td><input type="text" name="" id="input"></td>
+            </tr>
+            <tr>
+                <td>Mảng sau khi xóa</td>
+                <td><input type="text" id="output"></td>
+            </tr>
+            <tr row="2">
+                <td colspan="2">
+                    <button id="delete">Hủy</button>
+                    <button id="submit">Xóa phần tử lớn nhất</button>
+                </td>
+            </tr>
+        </table>
+    </form>
+    <script>
+        let output = document.getElementById("output");
+        document.getElementById("submit").addEventListener("click", function (e) {
+            let n = document.getElementById("input").value;
+
+            let arr = [];
+            arr = n.split(",");
+            let newArr = [];
+            for (let i of arr) {
+                newArr.push(Math.floor(i));
+            }
+
+            let max = Math.max(...newArr);
+            let filterResult = newArr.filter(function (element) {
+                return element !== max;
+            });
+            output.value = filterResult;
+            e.preventDefault();
+        });
+
+        document.getElementById("delete").addEventListener("click", function () {
+            document.getElementById("form").reset();
+        });
+    </script>
+</body>
+
+</html>

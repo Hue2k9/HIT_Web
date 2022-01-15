@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HIHI</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+
+<body>
+    <div class="container">
+        <h1>Lam nguoi iu em nhe!</h1>
+        <div class="answer">
+            <p id="yes">YES</p>
+            <p id="no" onmouseover="display()">No</p>
+
+        </div>
+    </div>
+    <script>
+        let no = document.getElementById("no");
+
+        function display() {
+            /*
+               no.style.marginTop = Math.floor(Math.random() * 500) + "px";
+               no.style.marginLeft = Math.floor(Math.random() * 800) + "px";
+            */
+            no.style.position = 'absolute';
+            no.style.top = Math.floor(Math.random() * 90 + 5) + '%';
+            no.style.left = Math.floor(Math.random() * 90 + 5) + '%';
+
+        }
+    </script>
+</body>
+
+</html>
