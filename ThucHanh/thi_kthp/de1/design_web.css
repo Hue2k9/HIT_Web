@@ -211,3 +211,6 @@ a {
 #content .list_content {
   align-items: center;
 }
+#content {
+  margin-bottom: 100px;
+}
