@@ -1,0 +1,176 @@
+html {
+  font-family: Arial, Helvetica, sans-serif;
+}
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+.container {
+}
+.received {
+  min-height: 200px;
+  width: 30%;
+  margin: 0 auto;
+}
+
+.pray {
+  width: 40%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+}
+
+.pray input {
+  min-height: 60px;
+  padding-left: 8px;
+  border-radius: 5px;
+  border: 1px solid blue;
+  min-width: 200px;
+  margin: 0px auto;
+  margin-left: -80px;
+}
+
+.left {
+  width: 30%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#english i {
+  font-size: 30px;
+  padding-left: 5px;
+  padding-top: 10px;
+}
+#english {
+}
+.left h6 {
+  font-size: 15px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+.left p {
+  text-align: center;
+  padding-left: 35px;
+  color: blue;
+  font-weight: bold;
+  margin-top: -23px;
+  font-size: 13px;
+}
+#english {
+  display: flex;
+  align-items: center;
+}
+.btn-pray {
+  width: 45%;
+  margin-top: 15px;
+  display: flex;
+  margin: 0px auto;
+  background: powderblue;
+  background: rgb(233, 154, 125);
+  padding-bottom: 10px;
+  border-radius: 5px;
+}
+.pray button {
+  margin: 0px auto;
+  padding: 7px 15px;
+  border-radius: 5px;
+  cursor: pointer;
+  border: 1px solid #333;
+  margin-top: 10px;
+  background-color: rgb(37, 52, 187);
+  color: white;
+  font-weight: bold;
+  margin-left: -45px;
+}
+.pray button:hover {
+  background-color: rgb(20, 196, 209);
+}
+.received img {
+  width: 350px;
+  height: 250px;
+}
+hr {
+  height: 3px;
+  width: 50%;
+  margin: 0px auto;
+  color: tomato;
+  margin-bottom: 10px;
+  background-color: tomato;
+}
+
+.pray p {
+  /*font-weight: bold;*/
+  color: white;
+  padding-left: 7px;
+  text-shadow: 1px 1px rgb(209, 176, 204);
+  padding-bottom: 5px;
+  color: rgb(235, 70, 139);
+  color: black;
+  /*
+  background-color: rgb(235, 70, 139);
+  */
+  padding: 5px 20px;
+  border-radius: 10px;
+  margin-bottom: 10px;
+  margin: 0px auto;
+  margin-left: -85px;
+}
+marquee {
+  background-color: yellow;
+  color: rgb(16, 44, 165);
+  padding-top: 5px;
+  padding-bottom: 5px;
+  font-weight: bold;
+}
+.nhang img {
+  height: 70px;
+  width: 75px;
+  display: none;
+}
+
+.khoi {
+  width: 100%;
+  overflow: hidden;
+  height: 50vh;
+  position: absolute;
+}
+span {
+  animation: b 10s linear infinite;
+}
+@keyframes b {
+  0% {
+    /* background: rgb(80, 79, 79); */
+    /* background: rgb(90, 89, 89); */
+    background: #333;
+  }
+  10% {
+    background: #333;
+  }
+  100% {
+    top: 0%;
+    opacity: 0;
+  }
+}
+#english {
+  background-color: rgb(26, 224, 174);
+  border-radius: 3px;
+  box-shadow: 1px 1px 2px #333;
+  padding-bottom: 15px;
+  padding-right: 5px;
+  margin-top: 5px;
+}
+#english p {
+  color: rgb(12, 106, 247);
+  font-weight: bolder;
+}
+#display {
+  margin-left: 100px;
+}
+marquee {
+  /*
+  margin-left: 200px;
+  margin-right: 200px;
+  */
+}

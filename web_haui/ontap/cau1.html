@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="cau1.css" />
+  </head>
+
+  <body>
+    <div class="container">
+      <div class="display input">
+        <p>Số n:</p>
+        <input type="text" id="input" />
+      </div>
+
+      <div class="display output">
+        <p>Kết quả:</p>
+        <input type="text" id="output" />
+      </div>
+
+      <div class="act">
+        <button onclick="output.value=Tinh()">Tính</button>
+        <button onclick="output.value='', input.value='' ">Nhập lại</button>
+      </div>
+    </div>
+
+    <script>
+      function Tinh() {
+        var sum = 0;
+        var text = "";
+        var gt = document.getElementById("input").value;
+        for (let i = 1; i <= gt; i++) {
+          sum += i * i;
+        }
+        return sum;
+      }
+      function getN() {
+        var gt = document.getElementById("input").value;
+        var text = "";
+        if (gt > 0) text = gt;
+        else text = "N>0";
+        return text;
+      }
+    </script>
+  </body>
+</html>

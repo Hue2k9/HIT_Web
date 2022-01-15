@@ -1,0 +1,36 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+.container {
+  width: 26%;
+  margin: 0px auto;
+  margin-top: 50px;
+}
+.container .input {
+  margin-bottom: 10px;
+}
+.container .input div {
+  width: 100%;
+
+  display: flex;
+  justify-content: space-between;
+}
+.container .input > p {
+  color: red;
+  text-align: center;
+}
+.active {
+  margin-left: 80px;
+}
+.active button {
+  width: 80px;
+  height: 30px;
+  line-height: 30px;
+  cursor: pointer;
+}
+h1 {
+  margin-bottom: 30px;
+  text-align: center;
+}

@@ -1,0 +1,42 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="cau1.css" />
+    <style>
+      .display {
+        display: flex;
+      }
+      .display p {
+        margin-left: 10px;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="container">
+      <p>Nhập số x:</p>
+      <div class="display input">
+        <input type="text" id="input" />
+        <p id="output"></p>
+      </div>
+      <div class="act">
+        <button onclick="Tinh()">Tính</button>
+      </div>
+    </div>
+
+    <script>
+      function Tinh() {
+        var sum = 0;
+        var text = "";
+        var value = document.getElementById("input").value;
+        for (let i = 1; i <= value; i++) {
+          if (i % 15 == 0) sum += i;
+        }
+        document.getElementById("output").innerHTML = sum;
+      }
+    </script>
+  </body>
+</html>

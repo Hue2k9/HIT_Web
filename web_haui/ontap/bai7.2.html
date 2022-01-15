@@ -1,0 +1,170 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Đăng ký tài khoản google</title>
+    <link rel="stylesheet" href="bai2.css" />
+    <style>
+        html {
+  font-family: Arial, Helvetica, sans-serif;
+  background-size: 100%;
+  color: black;
+  background-image: url("https://anhdephd.com/wp-content/uploads/2016/06/hinh-anh-thien-nhien-3d-dep-mat-2.jpeg");
+}
+* {
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box;
+}
+a {
+  text-decoration: none;
+}
+.container {
+  width: 30%;
+  margin: 0px auto;
+  margin-top: 35px;
+  border-radius: 10px;
+  box-shadow: 2px 2px 2px #333;
+  background-color: rgba(74, 162, 202, 0.623);
+  padding: 50px 50px;
+}
+.check {
+  margin-top: 10px;
+}
+.check button {
+  padding: 5px 12px;
+  cursor: pointer;
+  border-radius: 3px;
+  border: 1px solid #333;
+  margin-bottom: 20px;
+  font-weight: bold;
+}
+h3 {
+  font-weight: bold;
+  font-size: 20px;
+  margin-bottom: 20px;
+  color: white;
+  text-transform: uppercase;
+}
+
+input {
+    outline: none;
+  border: none;
+  padding: 0 10px;
+}
+.input p {
+  padding-bottom: 5px;
+}
+.input input {
+  height: 30px;
+  width: 65%;
+  border-radius: 5px;
+  border: 1px solid black;
+}
+.input input::placeholder {
+  padding-left: 3px;
+}
+#show {
+}
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <h3>Đăng ký tài khoản gmail</h3>
+      <form action="">
+        <div class="input name">
+          <p>Tên của bạn</p>
+          <input type="text" id="username" placeholder="Enter your name" />
+          <span class="check name" id="checkName"></span>
+        </div>
+
+        <div class="input password">
+          <p>Mật khẩu</p>
+          <input
+            type="password"
+            id="password"
+            placeholder="Enter your password"
+          />
+          <span class="check password"></span>
+        </div>
+
+        <div class="input phonenumber">
+          <p>Số điện thoại</p>
+          <input
+            type="text"
+            id="phonenumber"
+            placeholder="Enter your phone number"
+          />
+          <span class="check phonenumber"></span>
+        </div>
+
+        <div class="check">
+          <button id="check" onclick="Check()">Đăng ký</button>
+        </div>
+        <p id="show"></p>
+      </form>
+    </div>
+  </body>
+    <script>
+            function CheckName(){
+        let username=document.getElementById("username").value; 
+        if (username=='' || username==NaN)
+        return false;
+        for(var i=0; i<username.length; i++){
+            if (username.charAt(i)>='0' && username.charAt(i)<='9')
+            return false;
+        }
+        return true;
+        }
+
+        function CheckPassword(){
+        var password=document.getElementById("password").value;
+
+        let regexPassword = /^(?=.*[A-Za-z])(?=.*\d)(?=.*[@$!%*#?&])[A-Za-z\d@$!%*#?&]{8,}$/
+
+        if(regexPassword.test(password)) return true
+        else return false;
+        }
+
+        function CheckPhoneNumber(){
+        var phonenumber=document.getElementById("phonenumber").value;
+
+        var count=0;
+        for(let i=0; i<phonenumber.length; i++){
+            if (phonenumber.charAt(i)>='0' && phonenumber.charAt(i)<='9'){
+                count++;
+                break;
+            }
+        }
+        for(let i=0; i<phonenumber.length; i++){
+            if (phonenumber.charAt(i)==',' || phonenumber.charAt(i)=='-'){
+                count++;
+                break;
+            }
+        }
+        if (count==2)
+            return 1;
+        return 0;
+        }
+
+        function Check(){
+        document.querySelector("form").addEventListener("submit", (e) => {
+            e.preventDefault();
+        })
+
+        var text="test";
+            if (CheckName() && CheckPassword() && CheckPhoneNumber()==1){
+            text="Your name, password, phone number is correct";
+            }
+            else{
+            text="Tên đăng nhập chỉ có chữ\n Mật khẩu bao gồm chữ, số, hoa, ký tự đặc biệc\n SĐT chỉ bao gồm số và các ký tự , or -";
+            }   
+        alert("Huệ xinh gái phải hem?");
+        document.getElementById("show").innerHTML=text;
+        }   
+    </script>
+</html>

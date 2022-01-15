@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Đăng ký thành viên</title>
+    <link rel="stylesheet" href="cau2.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h1>Đăng ký thành viên</h1>
+      <div class="input name">
+        <div>
+          <p>Họ và tên</p>
+          <input type="text" id="name" required />
+        </div>
+        <p id="checkname"></p>
+      </div>
+
+      <div class="input password">
+        <div>
+          <p>Mật khẩu</p>
+          <input type="password" id="password" onblur="Check()" />
+        </div>
+        <p id="checkpassword"></p>
+      </div>
+
+      <div class="input password">
+        <div>
+          <p>Khẳng định mật khẩu</p>
+          <input id="passwordagain" type="password" onblur="Check()" />
+        </div>
+        <p id="checkpasswordagain"></p>
+      </div>
+
+      <div class="input day">
+        <div>
+          <p>Ngày tháng năm sinh</p>
+          <input type="date" />
+        </div>
+        <p id="checkday"></p>
+      </div>
+
+      <div class="input phonenumber">
+        <div>
+          <p>Số điện thoại</p>
+          <input id="phone" type="text" onblur="Check()" />
+        </div>
+        <p id="checkphone"></p>
+      </div>
+
+      <div class="input link">
+        <div>
+          <p>Đường dẫn ảnh</p>
+          <input type="file" id="file" />
+        </div>
+        <p id="checkfile" onblur="Check()"></p>
+      </div>
+
+      <div class="input email">
+        <div>
+          <p>Email:</p>
+          <input type="text" id="email" />
+        </div>
+        <p id="checkemail" onblur="Check()"></p>
+      </div>
+      <div class="input active">
+        <button onclick="Check()">Đăng ký</button>
+        <button>Hủy bỏ</button>
+        <p id="checkall"></p>
+      </div>
+    </div>
+    <script src="cau2.js"></script>
+  </body>
+</html>

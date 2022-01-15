@@ -1,0 +1,142 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+ul {
+  list-style-type: none;
+}
+a {
+  text-decoration: none;
+}
+.container {
+  width: 99%;
+  margin: 0px auto;
+}
+#header {
+}
+#header .top {
+  display: flex;
+  justify-content: space-between;
+}
+#header .top > img {
+  width: 80px;
+  height: 80px;
+}
+#header .title {
+  font-size: 20px;
+  text-align: center;
+}
+#header .title span {
+  color: #01a54f;
+  font-weight: bolder;
+}
+#header .title p {
+  color: #99ba13;
+  font-weight: bolder;
+}
+#header .left img {
+  width: 20px;
+  height: 20px;
+}
+#header .left .img {
+  position: relative;
+  float: right;
+  right: 0px;
+}
+#header .left {
+  flex-direction: column;
+  align-items: flex-end;
+}
+#header .left .search button {
+  margin-left: -10px;
+  margin-top: 5px;
+}
+#header .bottom {
+  background-color: #fbfef5;
+  border: 1px solid #333;
+}
+#header .bottom a {
+  color: black;
+  text-transform: uppercase;
+  display: block;
+}
+#header .bottom ul {
+  display: flex;
+  justify-content: space-between;
+}
+#header .bottom ul li {
+  border: 1px solid #333;
+  display: block;
+  padding: 5px 19px;
+}
+#header .bottom ul li:hover {
+  background-color: #00a551;
+}
+#header .bottom ul li:hover a {
+  color: white;
+}
+#banner img {
+  width: 1366px;
+  height: 300px;
+}
+#content {
+  display: flex;
+  width: 97%;
+  justify-content: space-between;
+}
+#content .title {
+  display: flex;
+}
+#content .decre .title img {
+  width: 25px;
+  height: 25px;
+}
+#content .title h3 {
+  text-transform: uppercase;
+}
+#content .decre > img {
+  width: 400px;
+  height: 200px;
+}
+#content .title h3 {
+  padding-bottom: 10px;
+}
+#content p {
+  padding-top: 5px;
+  padding-bottom: 20px;
+}
+#content a {
+  padding: 10px 20px;
+  border: 1px solid green;
+  margin-left: 150px;
+  position: relative;
+  float: right;
+  right: 0px;
+  color: green;
+  font-weight: bolder;
+}
+#footer {
+  background-color: #00a551;
+  display: flex;
+  justify-content: space-between;
+  margin-top: 50px;
+}
+#footer p {
+  color: white;
+  padding-top: 10px;
+  padding-bottom: 10px;
+
+  justify-content: space-between;
+}
+#footer .social img {
+  width: 20px;
+  height: 20px;
+}
+#footer .social {
+  display: flex;
+  width: 10%;
+}
+#content {
+  margin-top: 30px;
+}

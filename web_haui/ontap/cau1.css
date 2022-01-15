@@ -1,0 +1,31 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  boxsizing: border-box;
+}
+.container {
+  width: 50%;
+  margin: 0px auto;
+  margin-top: 70px;
+}
+.display {
+  display: flex;
+  margin-bottom: 10px;
+  width: 40%;
+  justify-content: space-between;
+}
+.output input {
+  height: 70px;
+}
+.act {
+  margin-top: 10px;
+}
+.act button {
+  width: 100px;
+  height: 30px;
+  text-align: center;
+  background-color: blue;
+  color: white;
+  border: 1px solid blue;
+  cursor: pointer;
+}
